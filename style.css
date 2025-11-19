@@ -1,0 +1,167 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+
+}
+
+.container {
+   width:100%;
+    max-width: 1310px;
+   margin: 0 auto;
+   padding: 0 16px;
+}
+.head-task-sec{
+    display: flex;
+    padding-top:20px;
+    align-items: center;
+    justify-content:space-between ;
+
+}
+.head-right-sec{
+   position: relative;
+   display: flex;
+
+}
+header{
+    background-color: beige;
+}
+.decor-sec{
+    text-decoration: none;
+    color: #192647;
+   
+}
+.decor-button-sec{
+    padding: 10px;
+    background-color:#192647;
+    color: white;
+    border-radius:25px;
+    border: 1px solid #192647;
+     text-decoration: none;
+}
+.under-line-sec{
+    display: flex;
+    gap: 50px;
+    list-style: none;
+}
+.image-main{
+    /* object-fit: cover;
+    height: 100%;
+    width: 100%; */
+    background: url(https://peter-mc-loughlin.vercel.app/assests/images/section/Banner.png);
+     background-repeat: no-repeat; 
+    background-size: cover;
+    background-position: center;
+     background-attachment: fixed; 
+}
+.bottom-for-tmo{
+    display: none;
+}
+
+.text-min-sec{
+    font-size: 14px;
+    padding-bottom: 20px;
+    font-weight: 700;
+    display:inline-block;
+}
+h1{
+    color: #f8f8f8;
+    font-weight: 200;
+    max-width: 606px;
+    padding-bottom: 27px;
+}
+.for-conformation{
+    height: 100vh;
+    padding: 255px 0px 257px 0px;
+}
+/* logo */
+.generic-hamburger {
+    outline: none;
+    background-color: transparent;
+    width: 32px;
+    height: 32px;
+    position: relative;
+    border: none;
+}
+
+.generic-hamburger__checkbox:checked~.generic-hamburger__bar:nth-of-type(1),
+.generic-hamburger__checkbox:checked~.generic-hamburger__bar:nth-of-type(3) {
+    transform: translateY(-50%);
+    top: 50%;
+}
+
+.generic-hamburger__checkbox:checked~.generic-hamburger__bar:nth-of-type(1) {
+    transform: rotate(45deg);
+}
+
+.generic-hamburger__checkbox:checked~.generic-hamburger__bar:nth-of-type(2) {
+    opacity: 0;
+}
+
+.generic-hamburger__checkbox:checked~.generic-hamburger__bar:nth-of-type(3) {
+    transform: rotate(-45deg);
+}
+
+.generic-hamburger__bar {
+    background-color: #131313;
+    width: 100%;
+    height: 4px;
+    left: 0;
+    transform-origin: center;
+    height: 4px;
+    position: absolute;
+    border: 1px solid #0a0a0a;
+    border-radius: 6px;
+    transition: all .3s;
+}
+
+.generic-hamburger__checkbox {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 2;
+    opacity: 0;
+    cursor: pointer;
+}
+
+.generic-hamburger__bar:nth-of-type(1) {
+    top: 0;
+}
+
+.generic-hamburger__bar:nth-of-type(2) {
+    top: calc(50% - (8px / 2));
+}
+
+.generic-hamburger__bar:nth-of-type(3) {
+    top: calc(100% - 8px);
+}
+/* End */
+
+
+@media (max-width:1023.99px) {
+    .under-line-sec{
+        position:fixed;
+        flex-direction: column;
+        width: 300px;
+        height: 100%;
+        /* background-color: rgba(132, 144, 158, 0.623); */
+        top: 0;
+        left: 0;
+        justify-content: start;
+        padding-top: 100px;
+        padding-inline: 20px;
+        transform: translateX(-100%);
+        transition: all 0.5s ease;
+        
+    }
+    .active {
+        transform: translateX(0);
+    }
+    .bottom-for-tmo{
+        display: block;
+    }
+
+}

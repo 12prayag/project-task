@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>project</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header>
+        <div class="container">
+            <div class="head-task-sec">
+                <div class="logo-sec">
+                    <a href="#">
+                        <img src="https://peter-mc-loughlin.vercel.app/assests/images/logos/Peter%20McLoughlin.png"
+                            alt="header-logo">
+                        <p class="decor-sec">| Civil and Commercial Mediator</p>
+                    </a>
+                </div>
+
+                <div class="head-right-sec">
+                    <ul class="under-line-sec">
+                        <li><a class="decor-sec" href="#">What we do</a></li>
+                        <li><a class="decor-sec" href="#">How we do it</a></li>
+                        <li><a class="decor-sec" href="#">Case STUDIES</a></li>
+                        <li><a class="decor-button-sec" href="#">GET IN TOUCH</a></li>
+                    </ul>
+                </div>
+                <button class="generic-hamburger bottom-for-tmo">
+                    <input class="generic-hamburger__checkbox" type="checkbox">
+                    <span class="generic-hamburger__bar"></span>
+                    <span class="generic-hamburger__bar"></span>
+                    <span class="generic-hamburger__bar"></span>
+                </button>
+
+
+            </div>
+        </div>
+    </header>
+    <section class="image-main">
+        <!-- <div>
+            <img class="img-task-bg" src="https://images.pexels.com/photos/34517522/pexels-photo-34517522.png" alt="">
+        </div> -->
+        <div class="container">
+            <div class="for-conformation">
+                <span class="text-min-sec">WELCOME TO PETER MCLOUGHLIN MEDIATION</span>
+                <h1>Mediation is a voluntary and flexible process</h1>
+            </div>
+        </div>
+    </section>
+    
+    <section>
+        <h2 class="slider-title">“Very personable and was particularly adept at making all parties feel at ease”</h2>
+    </section>
+
+
+
+
+
+    <script>
+        let storeg = document.querySelector(".bottom-for-tmo")
+        let menu = document.querySelector(".under-line-sec")
+        // let menu = document.querySelector(".head-right-sec")
+        storeg.addEventListener('click', () => {
+            menu.classList.toggle("active")
+        })
+
+    </script>
+</body>
+
+</html>
